@@ -1,5 +1,5 @@
 <?php
-
+namespace Controladoria;
 /**
  * Zend Framework (http://framework.zend.com/)
  *
@@ -8,6 +8,16 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 return array(
+      'acl' => array(
+        'Controladoria' => array(
+            'CONTROLADORIA' => array(
+                'Controladoria\Controller\Index:index',              
+            ),
+            'TI' => array(
+                'Controladoria\Controller\Index:index',              
+            ),
+        )
+    ),
     'router' => array(
         'routes' => array(
             // This defines the hostname route which forms the base
